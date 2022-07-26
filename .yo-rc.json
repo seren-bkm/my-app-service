@@ -1,11 +1,15 @@
 {
   "generator-jhipster": {
-    "applicationType": "microservice",
+    "applicationType": "monolith",
     "authenticationType": "jwt",
     "baseName": "myApp",
     "blueprints": [],
     "buildTool": "maven",
     "cacheProvider": "no",
+    "clientFramework": "angularX",
+    "clientPackageManager": "npm",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
     "creationTimestamp": 1658818741004,
     "databaseType": "sql",
     "devDatabaseType": "h2Disk",
@@ -14,11 +18,12 @@
     "enableHibernateCache": false,
     "enableSwaggerCodegen": false,
     "enableTranslation": false,
+    "entities": ["Person"],
     "entitySuffix": "",
     "jhiPrefix": "jhi",
     "jhipsterVersion": "7.8.1",
     "jwtSecretKey": "ZGE2Yzg4Mjc1OTUxMjI1YTFmMjMyZWE4ZjNiODk1MmQyYzAwNmQ5M2I2NTBmMjEyM2Y2YTQ3MmRmMDYzNzcxNTA1YThhZjlmYTI3MjdlZWNlOGQ1MTA5MDBhNDQyMzE2ZTVjNzQ1M2FiYWZlNGIzN2MyYWI0NWMyNjM4ZDA1M2I=",
-    "languages": ["en", "fr"],
+    "languages": ["en"],
     "messageBroker": false,
     "nativeLanguage": "tr",
     "otherModules": [],
@@ -33,9 +38,9 @@
     "skipCheckLengthOfIdentifier": false,
     "skipClient": true,
     "skipFakeData": false,
-    "skipUserManagement": true,
+    "skipUserManagement": false,
     "testFrameworks": [],
     "websocket": false,
-    "withAdminUi": false
+    "withAdminUi": true
   }
 }

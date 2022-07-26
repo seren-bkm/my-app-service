@@ -10,6 +10,10 @@ services:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://myapp-postgresql:5432/myApp
       - SPRING_LIQUIBASE_URL=jdbc:postgresql://myapp-postgresql:5432/myApp
       - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
+    # If you want to expose these ports outside your dev PC,
+    # remove the "127.0.0.1:" prefix
+    ports:
+      - 127.0.0.1:8080:8080
   myapp-postgresql:
     image: postgres:14.2
     # volumes:
